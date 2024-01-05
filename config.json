@@ -1,0 +1,30 @@
+{
+    "domain": "https://api.flippingalgos.xyz/",
+    "algod": {
+        "server": "https://mainnet-api.algonode.cloud/",
+        "port": 0,
+        "token": "",
+        "network": "MainNet"
+    },
+    "indexer": {
+        "server": "https://mainnet-idx.algonode.cloud",
+        "port": 0,
+        "token": ""
+    },
+    "ipfs": {
+        "display": "https://cloudflare-ipfs.com/ipfs/",
+        "ipfsGateway": "https://ipfs.algonode.xyz/ipfs/",
+        "token": ""
+    },
+    "explorer": "allo.info",
+    "application": {
+        "admin_addr": "7EISH72TGOIOMBHON3G5LE3HIZYORQL5R3KLKPI22YRGLW44JUW4UDNFGA",
+        "owner_addr": "7EISH72TGOIOMBHON3G5LE3HIZYORQL5R3KLKPI22YRGLW44JUW4UDNFGA",
+        "owner_addr2": "7EISH72TGOIOMBHON3G5LE3HIZYORQL5R3KLKPI22YRGLW44JUW4UDNFGA",
+        "name": "VOINFTIndexerAPI"
+    },
+    "dev": {
+        "debug_txns": false,
+        "accounts": {}
+    }
+}

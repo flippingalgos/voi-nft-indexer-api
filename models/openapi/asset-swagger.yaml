@@ -1,0 +1,26 @@
+openapi: 3.0.0
+info:
+  title: Converted from asset.swagger.yaml with typeconv
+  version: '1'
+  x-id: company.swagger.yaml
+  x-comment: >-
+    Generated from models/asset.ts by core-types-json-schema
+    (https://github.com/grantila/core-types-json-schema) on behalf of typeconv
+    (https://github.com/grantila/typeconv)
+paths: {}
+components:
+  schemas:
+    Company:
+      properties:
+        id:
+          title: Asset.id
+          type: string
+        name:
+          title: Asset.name
+          type: string
+      required:
+        - id
+        - asset_id
+      additionalProperties: false
+      title: Asset
+      type: object
