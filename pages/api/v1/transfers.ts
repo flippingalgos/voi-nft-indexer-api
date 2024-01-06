@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next'
 
 /**
  * @swagger
- * /api/transfers:
+ * /api/v1/transfers:
  *   get:
  *     summary: Retrieve NFT transfers based on query parameters
  *     produces:
