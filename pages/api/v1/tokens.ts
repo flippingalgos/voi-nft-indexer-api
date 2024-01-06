@@ -12,6 +12,10 @@ import { NextApiRequest, NextApiResponse } from 'next'
  *         in: query
  *         description: Include results for the specified round.
  *         type: integer
+ *       - name: mint-max-round
+ *         in: query
+ *         description: Limit results to NFTs minted on or before the given round.
+ *         type: integer
  *     responses:
  *       '200':
  *         description: Successful response
