@@ -14,6 +14,7 @@ See here for information for developers, contributors, and users of NFT Indexer 
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Tech stack](#tech-stack)
+  - [General flow](#general-flow)
   - [Endpoints](#endpoints)
   - [Authentication](#authentication)
   - [Examples](#examples)
@@ -52,11 +53,36 @@ graph TD
 
 - Vercel: Infrastructure used for NextJs based presenter API application (OA3 based)
 - Cloudflare: Infrastructure used for indexer API
+- Cloudflare D1: SQL storage (SQLite API) 
+- Cloudflare KV: KeyValue storage.
 - NodeJS: Platform for Scanner module
 - PM2: Reliable running agent for NodeJS. Used to reliably running Scanner module!
 
 Note : Algorand or VOI node REST API needs to be available too! No AVM indexer API is needed!
+## General flow
 
+```mermaid
+flowchart LR
+    AlgodAPI[Algod API]
+    Scanner[Scanner NodeJS Module]
+    Indexer[Indexer Serverless API]
+    Presenter[Presenter API]
+    User[User]
+    CloudflareD1[Cloudflare D1 SQL Instance]
+
+    Scanner -->|Scans rounds & events| AlgodAPI
+    Scanner -->|Calls POST methods with batch payload| Indexer
+    Indexer -->|Writes data to| CloudflareD1
+    Presenter -->|Calls GET methods| Indexer
+    User -->|Calls ARC74 GET methods| Presenter
+
+    style AlgodAPI fill:#f9f,stroke:#333,stroke-width:2px
+    style Scanner fill:#bbf,stroke:#333,stroke-width:2px
+    style Indexer fill:#fbf,stroke:#333,stroke-width:2px
+    style Presenter fill:#bfb,stroke:#333,stroke-width:2px
+    style User fill:#fbb,stroke:#333,stroke-width:2px
+    style CloudflareD1 fill:#ff9,stroke:#333,stroke-width:2px
+  ```
 ## Endpoints
 
 Documentation of available API endpoints, their functionality, and the expected request and response formats.
