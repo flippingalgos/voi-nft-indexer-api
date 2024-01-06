@@ -15,6 +15,7 @@ See here for information for developers, contributors, and users of NFT Indexer 
   - [Introduction](#introduction)
   - [Tech stack](#tech-stack)
   - [General flow](#general-flow)
+  - [Architecture Note](#architecture-note)
   - [Endpoints](#endpoints)
   - [Authentication](#authentication)
   - [Examples](#examples)
@@ -59,6 +60,7 @@ graph TD
 - PM2: Reliable running agent for NodeJS. Used to reliably running Scanner module!
 
 Note : Algorand or VOI node REST API needs to be available too! No AVM indexer API is needed!
+
 ## General flow
 
 ```mermaid
@@ -84,6 +86,11 @@ flowchart LR
     style User fill:#fbb,stroke:#000,stroke-width:2px
     style CloudflareD1 fill:#ff9,stroke:#000,stroke-width:2px
   ```
+## Architecture Note
+The reason for using two separated APIs is for separation of concerns in order to achieve better results in 48 hours time window of Hackathon!
+
+The presenter API sits in FrontEnd role and deals with rate limiting, front gate security and stuff like that while leaves the options for backend API and how it communicates data to frontend, open!
+
 ## Endpoints
 
 Documentation of available API endpoints, their functionality, and the expected request and response formats.
