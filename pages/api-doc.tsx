@@ -18,7 +18,7 @@ export const getStaticProps: GetStaticProps = async () => {
     definition: {
       openapi: '3.0.0',
       info: {
-        title: 'api.flippingalgos.xyz',
+        title: 'voi-nft-indexer-api.vercel.app',
         version: '1.0',
       },
     },

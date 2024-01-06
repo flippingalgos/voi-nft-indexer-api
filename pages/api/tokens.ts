@@ -1,10 +1,10 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextApiRequest, NextApiResponse } from 'next'
 
 /**
  * @swagger
- * /nft-indexer/v1/tokens:
+ * /api/tokens:
  *   get:
- *     summary: Retrieve NFT tokens based on query parameters
+ *     description: Retrieve NFT tokens based on query parameters
  *     produces:
  *       - application/json
  *     parameters:
@@ -59,7 +59,6 @@ import { NextApiRequest, NextApiResponse } from "next";
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/Error'
- *
  * components:
  *   schemas:
  *     Token:
@@ -99,22 +98,12 @@ import { NextApiRequest, NextApiResponse } from "next";
  *           type: string
  */
 
-const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method !== "GET") return res.status(400).json({
-    error: true,
-    message: "REQUEST METHOD NOT VALID only GET"
-  }) 
-  try {
-      const {address} = req.query;
-      if(address){
-        return res.status(200).json({success: false, message: "address found"})
-        //return res.status(200).json({success: false, message: "address not found"})
-      } else {
-        return res.status(400).json({success: false, message: "address cannot be empty"})
-      }
-  } catch (error) {
-    return res.status(400).json({success: false, message: "Error: " + error.message})
-  }
-};
-
-export default handler;
+const handler = async (
+    _req: NextApiRequest,
+    res: NextApiResponse,
+  ) => {
+    
+    res.status(200).json(true);
+  };
+  
+  export default handler;

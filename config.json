@@ -1,5 +1,5 @@
 {
-    "domain": "https://api.flippingalgos.xyz/",
+    "domain": "https://voi-nft-indexer-api.vercel.app/",
     "algod": {
         "server": "https://mainnet-api.algonode.cloud/",
         "port": 0,
