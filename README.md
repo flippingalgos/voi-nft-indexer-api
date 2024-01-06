@@ -77,12 +77,12 @@ flowchart LR
     Presenter -->|Calls GET methods| Indexer
     User -->|Calls ARC74 GET methods| Presenter
 
-    style AlgodAPI fill:#f9f,stroke:#333,stroke-width:2px
-    style Scanner fill:#bbf,stroke:#333,stroke-width:2px
-    style Indexer fill:#fbf,stroke:#333,stroke-width:2px
-    style Presenter fill:#bfb,stroke:#333,stroke-width:2px
-    style User fill:#fbb,stroke:#333,stroke-width:2px
-    style CloudflareD1 fill:#ff9,stroke:#333,stroke-width:2px
+    style AlgodAPI fill:#f9f,stroke:#000,stroke-width:2px
+    style Scanner fill:#bbf,stroke:#000,stroke-width:2px
+    style Indexer fill:#fbf,stroke:#000,stroke-width:2px
+    style Presenter fill:#bfb,stroke:#000,stroke-width:2px
+    style User fill:#fbb,stroke:#000,stroke-width:2px
+    style CloudflareD1 fill:#ff9,stroke:#000,stroke-width:2px
   ```
 ## Endpoints
 
