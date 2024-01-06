@@ -73,6 +73,7 @@ flowchart LR
     Scanner -->|Scans rounds & events| AlgodAPI
     Scanner -->|Calls POST methods with batch payload| Indexer
     Indexer -->|Writes data to| CloudflareD1
+    Indexer -->|Reads data from| CloudflareD1
     Presenter -->|Calls GET methods| Indexer
     User -->|Calls ARC74 GET methods| Presenter
 
