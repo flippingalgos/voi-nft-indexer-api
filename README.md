@@ -13,6 +13,7 @@ See here for information for developers, contributors, and users of NFT Indexer 
     - [Jan 2024 Voi Hackathon Team Project API Repository](#jan-2024-voi-hackathon-team-project-api-repository)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
+  - [Tech stack](#tech-stack)
   - [Endpoints](#endpoints)
   - [Authentication](#authentication)
   - [Examples](#examples)
@@ -46,6 +47,15 @@ graph TD
 - Indexer Serverless API: Receives and indexes data from the Scanner.
 - Presenter API: Retrieves indexed data and prepares it for user interaction.
 - User: The end-user who interacts with the system through the Presenter API.
+
+## Tech stack
+
+- Vercel: Infrastructure used for NextJs based presenter API application (OA3 based)
+- Cloudflare: Infrastructure used for indexer API
+- NodeJS: Platform for Scanner module
+- PM2: Reliable running agent for NodeJS. Used to reliably running Scanner module!
+
+Note : Algorand or VOI node REST API needs to be available too! No AVM indexer API is needed!
 
 ## Endpoints
 
