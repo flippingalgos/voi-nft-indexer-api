@@ -6,10 +6,13 @@ import { NextApiRequest, NextApiResponse } from 'next'
  *     description: Get Sales by asa_id
  *     parameters:
  *        - name: asa_id
- *          in: path
+ *          in: query
  *          required: true
  *        - name: x-access-token
  *          in: header
+ *          required: true
+ *        - name: asa_id2
+ *          in: query
  *          required: true
  *     responses:
  *       200:
