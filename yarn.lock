@@ -5718,7 +5718,7 @@ swagger-parser@10.0.2:
   dependencies:
     "@apidevtools/swagger-parser" "10.0.2"
 
-swagger-ui-react@^4.17.1:
+swagger-ui-react@^4.13.2:
   version "4.19.1"
   resolved "https://registry.yarnpkg.com/swagger-ui-react/-/swagger-ui-react-4.19.1.tgz#44474a608fabce6faf7846c8b5b22b054e99968e"
   integrity sha512-km83cp5ZlmCfROOq6QD1E7bM9f0RsvNrM2C1756UqZ6rRM0J3ex3ySyWa5+mcJRltn0eUB5NahqW8c6I4qwC6A==
