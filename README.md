@@ -54,7 +54,7 @@ graph TD
 - Vercel: Infrastructure used for NextJs based presenter API application (OA3 based)
 - Cloudflare: Infrastructure used for indexer API
 - Cloudflare D1: SQL storage (SQLite API) 
-- Cloudflare KV: KeyValue storage.
+- Cloudflare KV: KeyValue storage for internal parameters!
 - NodeJS: Platform for Scanner module
 - PM2: Reliable running agent for NodeJS. Used to reliably running Scanner module!
 
