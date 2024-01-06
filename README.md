@@ -9,12 +9,14 @@
 
 ## Table of Contents
 - [ARC74 based ARC72 NFT Indexer API](#arc74-based-arc72-nft-indexer-api)
-- [Jan 2024 Voi Hackathon Team Project API Repository](#jan-2024-voi-hackathon-team-project-api-repository)
-- [Tech stack](#tech-stack)
-- [General flow](#general-flow)
-- [Architecture Note](#architecture-note)
-- [Documentation](#documentation)
-- [References](#references)
+    - [Jan 2024 Voi Hackathon Team Project API Repository](#jan-2024-voi-hackathon-team-project-api-repository)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Tech stack](#tech-stack)
+  - [General flow](#general-flow)
+  - [Architecture Note](#architecture-note)
+  - [Documentation](#documentation)
+  - [References](#references)
 
 ## Introduction
 
@@ -86,6 +88,8 @@ flowchart LR
 The reason for using two separated APIs is for separation of concerns in order to achieve better results in 48 hours time window of Hackathon!
 
 The presenter API sits in FrontEnd role and deals with rate limiting, front gate security and stuff like that while leaves the options for backend API and how it communicates data to frontend, open!
+
+The endpoints between Presenter and Indexing APIs use "POST" method but identical endpoint URL as [ARC74] describes! Data is transferred as JSON and "Content-Type" and "Accept" headers are both set to "application/json".
 
 ## Documentation
 API is documented and tested using Swagger/OpenAPI UI: https://voi-nft-indexer-api.vercel.app
