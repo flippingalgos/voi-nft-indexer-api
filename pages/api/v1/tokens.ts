@@ -9,10 +9,10 @@ import { NextApiRequest, NextApiResponse } from 'next'
  *       - application/json
  *     parameters:
  *        - name: round
- *          in: path
+ *          in: query
  *          required: true
  *        - name: owner
- *          in: header
+ *          in: query
  *          required: true
  *     responses:
  *       '200':
