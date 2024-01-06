@@ -47,7 +47,7 @@ graph TD
 - Scanner NodeJS Module: Processes data from Algod API, scanning for ARC72 contracts.
 - Indexer Serverless API: Receives and indexes data from the Scanner.
 - Presenter API: Retrieves indexed data and prepares it for user interaction.
-- User: The end-user who interacts with the system through the Presenter API.
+- User: The end-user who interacts with the system through the Presenter API ([ARC74]).
 
 ## Tech stack
 
