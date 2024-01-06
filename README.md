@@ -6,19 +6,15 @@
 - FlippingAlgos
 - EasyTiger
 
-See here for information for developers, contributors, and users of NFT Indexer API.
 
 ## Table of Contents
 - [ARC74 based ARC72 NFT Indexer API](#arc74-based-arc72-nft-indexer-api)
-    - [Jan 2024 Voi Hackathon Team Project API Repository](#jan-2024-voi-hackathon-team-project-api-repository)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Tech stack](#tech-stack)
-  - [General flow](#general-flow)
-  - [Architecture Note](#architecture-note)
-  - [Endpoints](#endpoints)
-  - [Authentication](#authentication)
-  - [Examples](#examples)
+- [Jan 2024 Voi Hackathon Team Project API Repository](#jan-2024-voi-hackathon-team-project-api-repository)
+- [Tech stack](#tech-stack)
+- [General flow](#general-flow)
+- [Architecture Note](#architecture-note)
+- [Documentation](#documentation)
+- [References](#references)
 
 ## Introduction
 
@@ -91,35 +87,13 @@ The reason for using two separated APIs is for separation of concerns in order t
 
 The presenter API sits in FrontEnd role and deals with rate limiting, front gate security and stuff like that while leaves the options for backend API and how it communicates data to frontend, open!
 
-## Endpoints
+## Documentation
+API is documented and tested using Swagger/OpenAPI UI: https://voi-nft-indexer-api.vercel.app
 
-Documentation of available API endpoints, their functionality, and the expected request and response formats.
+## References
 
-- `/endpoint1`: [Description]
-- `/endpoint2`: [Description]
-- ...
+William G Hatch, "ARC-72: Algorand Smart Contract NFT Specification," Algorand Requests for Comments, no. 72, January 2023. [Online serial]. Available: https://github.com/algorandfoundation/ARCs/blob/main/ARCs/arc-0072.md.
 
-## Authentication
+William G Hatch, "ARC-73: Algorand Interface Detection Spec," Algorand Requests for Comments, no. 73, January 2023. [Online serial]. Available: https://github.com/algorandfoundation/ARCs/blob/main/ARCs/arc-0073.md.
 
-TBD.
-
-## Examples
-
-Provide examples of how to use the API, including sample requests and responses.
-
-```bash
-
-# Example request
-curl -X GET "https://api.example.com/endpoint1" -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
-
-
-```
-```json
-# Example response
-{
-  "status": "success",
-  "data": {
-    // Your response data
-  },
-}
-```
+William G Hatch, "ARC-74: NFT Indexer API," Algorand Requests for Comments, no. 74, February 2023. [Online serial]. Available: https://github.com/algorandfoundation/ARCs/blob/main/ARCs/arc-0074.md
